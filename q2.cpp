@@ -6,6 +6,18 @@ using namespace std;
 // Your code here
 // ******************************
 
+void getinput(int &, int &, int &);
+int findMin(int, int, int);
+void printResult(int n1, int n2, int n3, int min);
+
+int main () {
+	int n1, n2, n3, min;
+	getInput(n1, n2, n3);
+	min = findMin(n1, n2, n3);
+	printResult(n1, n2, n3, min);
+	return 0;
+}
+
 void getInput(int &n1, int &n2, int &n3) {
 	cin >> n1 >> n2 >> n3;
 }
@@ -23,15 +35,6 @@ int findMin(int n1, int n2, int n3) {
     }
 }
 
-void printResult(int n1, int n2, int n3, int min);
-
-int main () {
-	int n1, n2, n3, min;
-	getInput(n1, n2, n3);
-	min = findMin(n1, n2, n3);
-	printResult(n1, n2, n3, min);
-	return 0;
-}
 // ******************************
 // this function will help you pass the test. When you print the result with this function, you will get the same output format
 void printResult(int n1, int n2, int n3, int min)
