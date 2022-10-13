@@ -6,7 +6,7 @@ using namespace std;
 // Your code here
 // ******************************
 
-void getinput(int &, int &, int &);
+void getInput(int &, int &, int &);
 int findMin(int, int, int);
 void printResult(int n1, int n2, int n3, int min);
 
